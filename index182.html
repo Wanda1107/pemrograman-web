@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toLocaleLowerCase Function</title>
+</head>
+<body>
+
+    <h2>toLocaleLowerCase Function in JavaScript</h2>
+
+    <label for="originalString">Masukkan sebuah string:</label>
+    <input type="text" id="originalString" placeholder="Contoh: Hello World">
+
+    <button onclick="convertToLowerCase()">Ubah ke Huruf Kecil</button>
+
+    <p id="result"></p>
+
+    <script>
+        function convertToLowerCase() {
+            // Mendapatkan nilai dari input
+            var originalString = document.getElementById('originalString').value;
+
+            // Menggunakan toLocaleLowerCase untuk mengubah string menjadi huruf kecil
+            var lowerCaseString = originalString.toLocaleLowerCase();
+
+            // Menampilkan hasil
+            document.getElementById('result').innerHTML = "Hasil: " + lowerCaseString;
+        }
+    </script>
+
+</body>
+</html>
